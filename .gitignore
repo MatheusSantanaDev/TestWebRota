@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and logs
+.cache/
+.log/
+
+# Environment variables
+.env
+
+# MySQL socket file
+*.sock
+
+# IDE-specific files (add more as needed)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Editor backup files
+*~

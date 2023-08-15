@@ -1,0 +1,48 @@
+version: "3.7"
+
+services:
+  flask:
+    image: lvthillo/python-flask-docker
+    container_name: pyFlask-matheus
+    ports:
+      - "5000:5000"
+    volumes:
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv:/usr/src/app
+
+    networks:
+      - minha-rede
+
+  db:
+    image: mysql:5.7
+    container_name: mysql-matheus
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "admin"
+      MYSQL_DATABASE: "Users"
+    ports:
+      - "3306:3306"
+    volumes:
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv/bd:/var/lib/mysql
+
+    networks:
+      - minha-rede
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: phpmyadmin-matheus
+    environment:
+      PMA_HOST: mysql-matheus
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv/bd:/etc/phpmyadmin/config.user.inc.php
+
+    networks:
+      - minha-rede
+
+networks:
+   minha-rede:
+     driver: bridge
