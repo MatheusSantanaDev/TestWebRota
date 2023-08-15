@@ -1,6 +1,3 @@
-# Virtual environment
-venv/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -9,9 +6,6 @@ __pycache__/
 # Caches and logs
 .cache/
 .log/
-
-# Environment variables
-.env
 
 # MySQL socket file
 *.sock
