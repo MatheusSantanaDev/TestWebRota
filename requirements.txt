@@ -1,0 +1,10 @@
+flask
+flask_login
+flask_sqlalchemy
+werkzeug.security
+geopy
+datetime
+threading
+folium
+requests
+time

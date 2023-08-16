@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centralizar na horizontal */
+            justify-content: center; /* Centralizar na vertical */
+            min-height: 100vh;
+            background-color: #000000; /* Cor de fundo preto */
+            color: #ffA500; /* Cor do texto laranja */
+        }
+
+        .header {
+            text-align: left; /* Alinhar o texto à esquerda */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px; /* Tamanho aumentado */
+            margin: 0; /* Remove margem inferior */
+        }
+
+        p {
+            font-size: 16px;
+            color: #ffA500; /* Cor preta */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            display: block; /* Tornar o link um bloco */
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #ffA500; /* Cor de fundo laranja */
+            color: #000000; /* Cor do texto preto */
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center; /* Centralizar o texto */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #000000; /* Cor de fundo preto ao passar o mouse */
+            color: #ffA500; /* Cor do texto laranja ao passar o mouse */
+        }
+
+        .registration-image {
+            max-width: 180px; /* Aumentar o tamanho da imagem */
+            height: auto;
+            margin-right: 20px; /* Adicionar margem à direita */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://camo.githubusercontent.com/17211c62a9f98a3f0bebf27e8070a0c80d157d12a054a7dc5c904024e45d179a/68747470733a2f2f7777772e776562726f74612e636f6d2e62722f6173736574732f696d672f6c6f676f2d6d696e2e706e67" alt="Map" class="registration-image">
+
+    <div class="header">
+        <h1>Welcome to the Dashboard, {{ current_user.name }}!</h1>
+    </div>
+
+    <p>Choose an option:</p>
+    <ul>
+        <li><a href="{{ url_for('view_map') }}" target="_blank">View Map</a></li>
+        <li><a href="{{ url_for('add_point') }}">Add Point to Map</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+</body>
+</html>

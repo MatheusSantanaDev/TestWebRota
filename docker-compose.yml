@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   flask:
-    image: lvthillo/python-flask-docker
-    container_name: pyFlask-matheus
+    build: .
+    container_name: pyApi-matheus
     ports:
       - "5000:5000"
     volumes:
