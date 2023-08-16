@@ -1,10 +1,9 @@
 flask
 flask_login
 flask_sqlalchemy
-werkzeug.security
+PyMySQL
+werkzeug
 geopy
 datetime
-threading
 folium
 requests
-time
