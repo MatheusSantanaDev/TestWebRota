@@ -2,7 +2,7 @@ from flask import render_template, request, redirect, url_for, flash
 from flask_login import login_user, logout_user, login_required
 from app import app, db
 from app.models import User
-from geopy.distance import geodesic
+from geopy import geodesic
 from datetime import datetime
 import threading
 import folium
