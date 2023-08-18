@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f17231e624270f501de1596c80f90eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1f17231e624270f501de1596c80f90eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1f17231e624270f501de1596c80f90eb = L.map(
+                "map_1f17231e624270f501de1596c80f90eb",
+                {
+                    center: [-18.924067, -48.282142],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_414b8b17940afaab41ee1e1762386ead = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+            var marker_17ea47bf1067ddddc48590e9a1bd4eaa = L.marker(
+                [-18.924067, -48.282142],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_46061034c06e7100af7bbfdf94d6e2b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55890e0b1b1109b41602e841ff3de1c3 = $(`<div id="html_55890e0b1b1109b41602e841ff3de1c3" style="width: 100.0%; height: 100.0%;">         <strong>Point 1</strong><br>         Latitude: -18.924067<br>         Longitude: -48.282142<br>         Total Distance: 0.00 km         </div>`)[0];
+                popup_46061034c06e7100af7bbfdf94d6e2b3.setContent(html_55890e0b1b1109b41602e841ff3de1c3);
+            
+        
+
+        marker_17ea47bf1067ddddc48590e9a1bd4eaa.bindPopup(popup_46061034c06e7100af7bbfdf94d6e2b3)
+        ;
+
+        
+    
+    
+            var marker_dd7d041e794edaaf34fae1e7e2fe94ac = L.marker(
+                [-18.923765, -48.282108],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_da7fa56094bc2ec530efc2e6b93c7871 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e354d4a13e382c20c7fe581f863c4541 = $(`<div id="html_e354d4a13e382c20c7fe581f863c4541" style="width: 100.0%; height: 100.0%;">         <strong>Point 2</strong><br>         Latitude: -18.923765<br>         Longitude: -48.282108<br>         Total Distance: 0.03 km         </div>`)[0];
+                popup_da7fa56094bc2ec530efc2e6b93c7871.setContent(html_e354d4a13e382c20c7fe581f863c4541);
+            
+        
+
+        marker_dd7d041e794edaaf34fae1e7e2fe94ac.bindPopup(popup_da7fa56094bc2ec530efc2e6b93c7871)
+        ;
+
+        
+    
+    
+            var marker_282e395e8fe07fd60929420dc8113912 = L.marker(
+                [-18.922135, -48.282052],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_3c02782e2d4e854a8a2ef305d920d17c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cd611cf87a916455491a1f2ba39b4cf = $(`<div id="html_2cd611cf87a916455491a1f2ba39b4cf" style="width: 100.0%; height: 100.0%;">         <strong>Point 3</strong><br>         Latitude: -18.922135<br>         Longitude: -48.282052<br>         Total Distance: 0.21 km         </div>`)[0];
+                popup_3c02782e2d4e854a8a2ef305d920d17c.setContent(html_2cd611cf87a916455491a1f2ba39b4cf);
+            
+        
+
+        marker_282e395e8fe07fd60929420dc8113912.bindPopup(popup_3c02782e2d4e854a8a2ef305d920d17c)
+        ;
+
+        
+    
+    
+            var marker_5386545b6c3d3d3bee14bea2daf693ff = L.marker(
+                [-18.920822, -48.281328],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_3588c038c830c3681d92dcda66aa6fc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e79dcfd68267c607df3a4e103277d5 = $(`<div id="html_d3e79dcfd68267c607df3a4e103277d5" style="width: 100.0%; height: 100.0%;">         <strong>Point 4</strong><br>         Latitude: -18.920822<br>         Longitude: -48.281328<br>         Total Distance: 0.38 km         </div>`)[0];
+                popup_3588c038c830c3681d92dcda66aa6fc9.setContent(html_d3e79dcfd68267c607df3a4e103277d5);
+            
+        
+
+        marker_5386545b6c3d3d3bee14bea2daf693ff.bindPopup(popup_3588c038c830c3681d92dcda66aa6fc9)
+        ;
+
+        
+    
+    
+            var marker_47303d83385a583ddb78f68f4bd2c725 = L.marker(
+                [-18.919513, -48.280332],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_0a9405483acc4943e55df8eabb1bfe8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_694b16faba9d33e2cf355c1eeea2c58e = $(`<div id="html_694b16faba9d33e2cf355c1eeea2c58e" style="width: 100.0%; height: 100.0%;">         <strong>Point 5</strong><br>         Latitude: -18.919513<br>         Longitude: -48.280332<br>         Total Distance: 0.56 km         </div>`)[0];
+                popup_0a9405483acc4943e55df8eabb1bfe8d.setContent(html_694b16faba9d33e2cf355c1eeea2c58e);
+            
+        
+
+        marker_47303d83385a583ddb78f68f4bd2c725.bindPopup(popup_0a9405483acc4943e55df8eabb1bfe8d)
+        ;
+
+        
+    
+    
+            var marker_9f31569abcecef23f5603921ab67dfa6 = L.marker(
+                [-18.919663, -48.278498],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_8513da6a1fca3e1d1a0fcc4679e32251 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87780a968a98a5848903af2500c8078b = $(`<div id="html_87780a968a98a5848903af2500c8078b" style="width: 100.0%; height: 100.0%;">         <strong>Point 6</strong><br>         Latitude: -18.919663<br>         Longitude: -48.278498<br>         Total Distance: 0.75 km         </div>`)[0];
+                popup_8513da6a1fca3e1d1a0fcc4679e32251.setContent(html_87780a968a98a5848903af2500c8078b);
+            
+        
+
+        marker_9f31569abcecef23f5603921ab67dfa6.bindPopup(popup_8513da6a1fca3e1d1a0fcc4679e32251)
+        ;
+
+        
+    
+    
+            var marker_09c284b4284e9510de6275801edb98aa = L.marker(
+                [-18.920818, -48.276822],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_a6593f56d65e12e58be359720cbdd52d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1badb8b8cda8cad230de20af721e61a = $(`<div id="html_a1badb8b8cda8cad230de20af721e61a" style="width: 100.0%; height: 100.0%;">         <strong>Point 7</strong><br>         Latitude: -18.920818<br>         Longitude: -48.276822<br>         Total Distance: 0.97 km         </div>`)[0];
+                popup_a6593f56d65e12e58be359720cbdd52d.setContent(html_a1badb8b8cda8cad230de20af721e61a);
+            
+        
+
+        marker_09c284b4284e9510de6275801edb98aa.bindPopup(popup_a6593f56d65e12e58be359720cbdd52d)
+        ;
+
+        
+    
+    
+            var marker_b17479c437bfdce0dff4c336b3077135 = L.marker(
+                [-18.92195, -48.275132],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_18b142389a143cccb1b32113db3ebbae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b10c45e1be14d11094453a5590cc538 = $(`<div id="html_0b10c45e1be14d11094453a5590cc538" style="width: 100.0%; height: 100.0%;">         <strong>Point 8</strong><br>         Latitude: -18.92195<br>         Longitude: -48.275132<br>         Total Distance: 1.19 km         </div>`)[0];
+                popup_18b142389a143cccb1b32113db3ebbae.setContent(html_0b10c45e1be14d11094453a5590cc538);
+            
+        
+
+        marker_b17479c437bfdce0dff4c336b3077135.bindPopup(popup_18b142389a143cccb1b32113db3ebbae)
+        ;
+
+        
+    
+    
+            var marker_a4c30de933c97959a268b49afaadd7a2 = L.marker(
+                [-18.922981, -48.273508],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_d0e90ac3d4de221c23691538e16ff3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53c3cb2ba495ae4368de978341e66aec = $(`<div id="html_53c3cb2ba495ae4368de978341e66aec" style="width: 100.0%; height: 100.0%;">         <strong>Point 9</strong><br>         Latitude: -18.922981<br>         Longitude: -48.273508<br>         Total Distance: 1.39 km         </div>`)[0];
+                popup_d0e90ac3d4de221c23691538e16ff3bb.setContent(html_53c3cb2ba495ae4368de978341e66aec);
+            
+        
+
+        marker_a4c30de933c97959a268b49afaadd7a2.bindPopup(popup_d0e90ac3d4de221c23691538e16ff3bb)
+        ;
+
+        
+    
+    
+            var marker_942248ec14f0ee9cde39ff7a624557aa = L.marker(
+                [-18.923137, -48.273372],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_f4059aa5be0f9e35095a162e48d1d5a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75e1c4d3e05d7d014e66842def0efad = $(`<div id="html_e75e1c4d3e05d7d014e66842def0efad" style="width: 100.0%; height: 100.0%;">         <strong>Point 10</strong><br>         Latitude: -18.923137<br>         Longitude: -48.273372<br>         Total Distance: 1.41 km         </div>`)[0];
+                popup_f4059aa5be0f9e35095a162e48d1d5a5.setContent(html_e75e1c4d3e05d7d014e66842def0efad);
+            
+        
+
+        marker_942248ec14f0ee9cde39ff7a624557aa.bindPopup(popup_f4059aa5be0f9e35095a162e48d1d5a5)
+        ;
+
+        
+    
+    
+            var marker_d6fc3fc3b9b9e204c49ee3ebd5317de7 = L.marker(
+                [-18.923722, -48.272138],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_825a4b410c113d194c844392a0996de2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e990f6258f1eb082b065a808ea5f3a4e = $(`<div id="html_e990f6258f1eb082b065a808ea5f3a4e" style="width: 100.0%; height: 100.0%;">         <strong>Point 11</strong><br>         Latitude: -18.923722<br>         Longitude: -48.272138<br>         Total Distance: 1.56 km         </div>`)[0];
+                popup_825a4b410c113d194c844392a0996de2.setContent(html_e990f6258f1eb082b065a808ea5f3a4e);
+            
+        
+
+        marker_d6fc3fc3b9b9e204c49ee3ebd5317de7.bindPopup(popup_825a4b410c113d194c844392a0996de2)
+        ;
+
+        
+    
+    
+            var marker_e089c99d13444096acaf3c20ad1cc065 = L.marker(
+                [-18.92295, -48.270782],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_132afcada40521cf109b42ffe549735e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b9ad5466e6154aaf491daf093027a1d = $(`<div id="html_6b9ad5466e6154aaf491daf093027a1d" style="width: 100.0%; height: 100.0%;">         <strong>Point 12</strong><br>         Latitude: -18.92295<br>         Longitude: -48.270782<br>         Total Distance: 1.73 km         </div>`)[0];
+                popup_132afcada40521cf109b42ffe549735e.setContent(html_6b9ad5466e6154aaf491daf093027a1d);
+            
+        
+
+        marker_e089c99d13444096acaf3c20ad1cc065.bindPopup(popup_132afcada40521cf109b42ffe549735e)
+        ;
+
+        
+    
+    
+            var marker_d4816964312bc86f2f39fb89485e3a60 = L.marker(
+                [-18.919908, -48.267855],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_228e510e569a3717ae08823ace05c20e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b9060040b5f9e1ab6da271ad3184774 = $(`<div id="html_7b9060040b5f9e1ab6da271ad3184774" style="width: 100.0%; height: 100.0%;">         <strong>Point 13</strong><br>         Latitude: -18.919908<br>         Longitude: -48.267855<br>         Total Distance: 2.18 km         </div>`)[0];
+                popup_228e510e569a3717ae08823ace05c20e.setContent(html_7b9060040b5f9e1ab6da271ad3184774);
+            
+        
+
+        marker_d4816964312bc86f2f39fb89485e3a60.bindPopup(popup_228e510e569a3717ae08823ace05c20e)
+        ;
+
+        
+    
+    
+            var marker_8573f441cdbedeae4842ee1aceb0af7d = L.marker(
+                [-18.917653, -48.26528],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_6a5c9b0d09760db296bb607fd5cb5e20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28e464a3e7cb9821b4380138e712e48e = $(`<div id="html_28e464a3e7cb9821b4380138e712e48e" style="width: 100.0%; height: 100.0%;">         <strong>Point 14</strong><br>         Latitude: -18.917653<br>         Longitude: -48.26528<br>         Total Distance: 2.55 km         </div>`)[0];
+                popup_6a5c9b0d09760db296bb607fd5cb5e20.setContent(html_28e464a3e7cb9821b4380138e712e48e);
+            
+        
+
+        marker_8573f441cdbedeae4842ee1aceb0af7d.bindPopup(popup_6a5c9b0d09760db296bb607fd5cb5e20)
+        ;
+
+        
+    
+    
+            var marker_10c700608d0346c6187e2427c5caa7e0 = L.marker(
+                [-18.918151, -48.264539],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_50e06ee956787d01faf119dea35aed15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7428ef54cb6518aed662edf1171d747 = $(`<div id="html_e7428ef54cb6518aed662edf1171d747" style="width: 100.0%; height: 100.0%;">         <strong>Point 15</strong><br>         Latitude: -18.918151<br>         Longitude: -48.264539<br>         Total Distance: 2.65 km         </div>`)[0];
+                popup_50e06ee956787d01faf119dea35aed15.setContent(html_e7428ef54cb6518aed662edf1171d747);
+            
+        
+
+        marker_10c700608d0346c6187e2427c5caa7e0.bindPopup(popup_50e06ee956787d01faf119dea35aed15)
+        ;
+
+        
+    
+    
+            var marker_003cbae0c80754d57e8615d9f0484aa7 = L.marker(
+                [-18.918145, -48.264537],
+                {}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+    
+        var popup_faf685091b83b11fc3ed95d0b0124521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2898017ac3c405d0bb682fce48e65d1f = $(`<div id="html_2898017ac3c405d0bb682fce48e65d1f" style="width: 100.0%; height: 100.0%;">         <strong>Point 16</strong><br>         Latitude: -18.918145<br>         Longitude: -48.264537<br>         Total Distance: 2.65 km         </div>`)[0];
+                popup_faf685091b83b11fc3ed95d0b0124521.setContent(html_2898017ac3c405d0bb682fce48e65d1f);
+            
+        
+
+        marker_003cbae0c80754d57e8615d9f0484aa7.bindPopup(popup_faf685091b83b11fc3ed95d0b0124521)
+        ;
+
+        
+    
+    
+            var poly_line_9b02d30a28671daca1e1d767a9fb8d8e = L.polyline(
+                [[-18.924067, -48.282142], [-18.923765, -48.282108], [-18.922135, -48.282052], [-18.920822, -48.281328], [-18.919513, -48.280332], [-18.919663, -48.278498], [-18.920818, -48.276822], [-18.92195, -48.275132], [-18.922981, -48.273508], [-18.923137, -48.273372], [-18.923722, -48.272138], [-18.92295, -48.270782], [-18.919908, -48.267855], [-18.917653, -48.26528], [-18.918151, -48.264539], [-18.918145, -48.264537]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1f17231e624270f501de1596c80f90eb);
+        
+</script>
+</html>

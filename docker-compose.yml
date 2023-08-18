@@ -4,11 +4,11 @@ services:
   flask:
     build: .
     container_name: pyApi-matheus
+    restart: always
     ports:
-      - "5000:5000"
+      - "3030:3030"
     volumes:
-      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv:/usr/src/app
-
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd:/usr/src/app
     networks:
       - minha-rede
 
@@ -22,8 +22,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv/bd:/var/lib/mysql
-
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/bd:/var/lib/mysql
     networks:
       - minha-rede
 
@@ -38,8 +37,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/venv/bd:/etc/phpmyadmin/config.user.inc.php
-
+      - /mnt/c/Users/atail/Documents/GitHub/TestWebRota/api-flask-bd/bd:/etc/phpmyadmin/config.user.inc.php
     networks:
       - minha-rede
 

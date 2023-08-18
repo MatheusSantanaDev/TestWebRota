@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Point</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000; /* Cor de fundo preto */
+            color: #000000; /* Cor do texto preto */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffA500; /* Cor de fundo laranja */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000000; /* Cor do texto preto */
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #000000; /* Cor de fundo laranja */
+            color: #ffA500; /* Cor do texto preto */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffff; /* Cor de fundo preto ao passar o mouse */
+            color: #ffA500; /* Cor do texto laranja ao passar o mouse */
+        }
+
+        .registration-image {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://camo.githubusercontent.com/17211c62a9f98a3f0bebf27e8070a0c80d157d12a054a7dc5c904024e45d179a/68747470733a2f2f7777772e776562726f74612e636f6d2e62722f6173736574732f696d672f6c6f676f2d6d696e2e706e67" alt="Map" class="registration-image">
+        
+        <h2>Add New Point</h2>
+        <form action="/add_point" method="post">
+            Latitude: <input type="text" name="latitude"><br>
+            Longitude: <input type="text" name="longitude"><br>
+            <input type="submit" value="Add Point">
+        </form>
+
+        <a href="/dashboard" class="back-button">Back to Dashboard</a>
+    </div>
+</body>
+</html>
