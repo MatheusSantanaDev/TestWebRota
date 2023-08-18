@@ -11,7 +11,7 @@ import requests
 import time
 
 
-url = 'https://raw.githubusercontent.com/MatheusSantanaDev/TestWebRota/master/positions.json'
+url = 'https://github.com/MatheusSantanaDev/TestWebRota/blob/master/api-flask-bd/positions.json'
 
 def calculate_total_distance(data):
     total_distance = 0
