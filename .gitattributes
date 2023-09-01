@@ -1,6 +1,0 @@
-*.java linguist-language = java
-*.py linguist-language = python
-*.kt linguist-language = kotlin
-*.json linguist-language = JSON
-*.html linguist-language = html
-*.php linguist-language = PHP
